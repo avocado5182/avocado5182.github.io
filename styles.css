@@ -9,7 +9,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #666666;
+  background-color: #1d60b3;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #1c87c9;
+  background-color: #123e73;
 }
 
 .navbar .icon {
