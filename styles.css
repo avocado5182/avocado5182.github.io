@@ -1,7 +1,5 @@
 html,
 body {
-  background-color: #081b33;
-  color: white;
   font-family: sans-serif;
 }
 
@@ -33,6 +31,8 @@ body {
 }
 
 .container {
+  background-color: #081b33;
+  color: white;
   padding: 1em;
   margin-top: 35px;
 }
