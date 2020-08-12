@@ -20,6 +20,7 @@ body {
   padding: 15px 18px;
   text-decoration: none;
   font-size: 18px;
+  transition: background-color 0.2s;
 }
 
 .navbar a:hover {
