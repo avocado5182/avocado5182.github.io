@@ -45,6 +45,7 @@ body {
 .request-form {
   width: 95%;
   background-color: #eee;
+  color: black;
   border-radius: 4px;
   padding: 1em;
 }
