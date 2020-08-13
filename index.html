@@ -12,13 +12,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Cool and good Site</title>
+    <title>Homepage - Wisebits</title>
   </head>
   <body>
     <div class="topnav" id="myTopnav">
       <a href="/">Home</a>
-      <a href="/#">Coding Languages</a>
-      <a href="/#">Tutorials</a>
+      <a href="/coding-languages">Coding Languages</a>
+      <a href="#">Tutorials</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -47,61 +47,17 @@
         </div> -->
       </div>
       <div id="hs-2">
-          <div class="sign-up">
-            <form id="signup-form" name="signup-form">
-              <h2>Sign up and start learning for free today!</h2> </br>
-              <input type="text" name="name" id="name" pattern="^[a-zA-Z0-9]+([_-]?[a-zA-Z0-9])*$" required placeholder="Display Name"/> </br> </br>
-              <input type="email" name="email" id="email" required placeholder="Email"/> </br> </br>
-              <input type="submit" value="SIGN UP NOW »"> </br>
-              <p>You will use your Display Name to log in.</p>
-            </form>
-
-            <div id="form-modal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Successfully submitted!</p>
-              </div>
-            </div>
-          </div>
-
-          <script>
-            // Get the modal
-            var modal = document.getElementById("form-modal");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-              modal.style.display = "none";
-            };
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-              if (event.target === modal) {
-                modal.style.display = "none";
-              }
-            };
-
-            function successFunc(response) {
-              console.log("Success!", response);
-              modal.style.display = "block";
-              document.getElementById("signup-form").reset();
-            }
-
-            const scriptURL =
-              "https://script.google.com/macros/s/AKfycbxCeZaslHIIyy1IabdPiQ289Lfsmzg_fZV9z_PIot-zJXulszwD/exec";
-            const form = document.forms["signup-form"];
-
-            form.addEventListener("submit", (e) => {
-              e.preventDefault();
-              fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => successFunc(response))
-                .catch((error) => console.error("Error!", error.message));
-            });
-          </script>
+        <div class="sign-up">
+          <form target="_blank" onsubmit="return validateForm()" name="signup-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfG9INZn0AJfXoZ5WGNlmXA9MjzZDv8wSLXNPzWswbxInqUdg/formResponse" method="POST" id="signup-form">
+            <h2>Sign up and start learning for free today!</h2> </br>
+            <input type="text" name="entry.2016517718" minlength="3" maxlength="32" pattern="/^[a-z][^\W_]{2,23}$w/g" required placeholder="Name"/> </br> </br>
+            <input type="password" name="entry.1120904250" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{4,8}$" required placeholder="Password"/> </br> </br>
+            <input type="email" name="entry.937210333" id="email" required placeholder="Email"/> </br> </br>
+            <button disabled type="submit" >SIGN UP NOW »</button></br>
+            <p>We will never send you unsolicited messages.</p>
+          </form>
+        </div>
       </div>
-    </div>
 
     <div class="container"></div>
 
