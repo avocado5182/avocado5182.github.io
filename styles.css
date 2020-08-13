@@ -1,51 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 
 html,
 body {
-  background-color: #081b33;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #1d60b3;
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
+  height: 100%;
+  background-color: #121212;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
-.navbar a {
+.topnav {
+  overflow: hidden;
+  background-color: green;
+}
+
+.topnav a {
   float: left;
   display: block;
-  color: #eeeeee;
+  color: #f2f2f2;
   text-align: center;
-  padding: 15px 18px;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  user-select: none;
+  font-size: 17px;
   transition: background-color 0.2s;
 }
 
-.navbar a:hover {
-  background-color: #123e73;
+.topnav a:hover {
+  background-color: darkgreen;
 }
 
-.navbar .icon {
+.topnav .icon {
   display: none;
 }
 
 .container {
-  background-color: #081b33;
   color: white;
-  padding: 1em;
-  margin-top: 35px;
+  padding: 2em;
 }
+
+#hero-section {
+  padding: 2em;
+}
+
+#hs-1 {
+  width: 62.5%;
+  float: left;
+  text-align: left;
+}
+
+.subtitle {
+  font-weight: normal;
+}
+
+#hs-2 {
+  width: 37.5%;
+  float: right;
+  text-align: right;
+}
+
+#hs-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.sign-up {
+  float: right;
+  text-align: center;
+  width: 75%;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+}
+
+.sign-up h2 {
+  margin: 0;
+}
+
+.sign-up input[type="text"],
+.sign-up input[type="email"] {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 1em);
+  height: 2em;
+  padding: 1em;
+  padding-right: 0;
+  font-size: 1.05rem;
+}
+
+.sign-up input::placeholder {
+  color: #484848;
+}
+
+.sign-up input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  width: 100%;
+  height: 3em;
+}
+
+.sign-up p {
+  color: gray;
+}
+
+/* .cta-container {
+  width: 50%;
+  background-color: #242424;
+  padding: 2em;
+  border: 1px solid #444444;
+  border-radius: 8px;
+}
+
+.cta-container input {
+  display: inline-block;
+}
+
+.cta-container button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background-color: green;
+  color: white;
+  width: 100%;
+  height: 2em;
+}
+
+#cta-email {
+  width: 100%;
+  height: 2em;
+  background-color: #363636;
+  border: 1px solid #444444;
+  color: white;
+  transition: border 0.2s;
+}
+
+#cta-email:focus {
+  border: 2px solid darkslateblue;
+  outline: none;
+}
+
+#cta-form input #cta-form p {
+  font-size: 1.25rem;
+  margin: 0 auto;
+} */
 
 .request-form {
   width: 95%;
-  background-color: #eee;
-  color: black;
+  background-color: #242424;
+  color: white;
   border-radius: 4px;
   padding: 1em;
 }
@@ -55,18 +166,31 @@ body {
   width: calc(100% - 1em - 8px);
   font-family: sans-serif;
   padding: 8px;
-  border: 1px solid #ccc;
+  background-color: #363636;
+  border: 1px solid #444444;
+  color: white;
   border-radius: 4px;
+  transition: border 0.2s;
+}
+
+.request-form input:focus,
+.request-form textarea:focus {
+  border: 2px solid darkslateblue;
 }
 
 .request-form button[type="submit"] {
   cursor: pointer;
-  background-color: #1c87c9;
+  background-color: green;
   border: none;
   padding: 8px;
   width: 100%;
   color: white;
   font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.request-form button[type="submit"]:hover {
+  background-color: darkgreen;
 }
 
 /* The Modal (background) */
@@ -85,53 +209,50 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #242424;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid #444444;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #727272;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  user-select: none;
+  transition: color 0.2s;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* 
-  When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon)
-  The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally)
-*/
-
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {
+  .topnav a:not(:first-child) {
     display: none;
   }
-  .navbar a.icon {
+  .topnav a.icon {
     float: right;
     display: block;
   }
 
-  .navbar.responsive {
-    position: fixed;
-    top: 0;
-    left: 0;
+  .topnav.responsive {
+    position: relative;
   }
-  .navbar.responsive a.icon {
+
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .navbar.responsive a {
+
+  .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
