@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -13,37 +15,53 @@
     <title>Cool and good Site</title>
   </head>
   <body>
-    <div class="navbar" id="myTopnav">
-      <a href="/">Homepage</a>
-      <a href="all-tools.html">All Tools</a>
-      <a href="request-a-tool.html">Request a Tool</a>
+    <div class="topnav" id="myTopnav">
+      <a href="/">Home</a>
+      <a href="/#">Coding Languages</a>
+      <a href="/#">Tutorials</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
 
-    <div class="container">
-      <h1>Cool Site</h1>
-      <p>Nice content!</p>
+    <div id="hero-section">
+      <div id="hs-1">
+        <h1 class="title">
+          Learn about coding languages and their histories with Wisebits
+        </h1>
+        <h3 class="subtitle">
+          Learn about how programming came to be as well as the history of
+          popular programming languages like Python and Javascript!
+        </h3>
 
-      <hr />
+      </br>
+        <!-- <div class="cta-container">
+          <form id="cta-form" name="cta-sheets">
+            <p id="cta-info-1">Sign up for our newsletter</p>
 
-      <ul>
-        <li>Unordered list time!</li>
-        <li>Yeah, I said unordered list.</li>
-      </ul>
+            <input type="email" name="email" id="cta-email" />
+            <button type="submit">Sign up</button>
 
-      <ol>
-        <li>
-          LOL, imagine being an unordered list when you could be an ordered
-          list! Hah!
-        </li>
-        <li>
-          I atleast have numbers! You just have puny little bullet points!
-          Hahaha!
-        </li>
-      </ol>
+            <p id="cta-info-2">We will never send you spam.</p>
+          </form>
+        </div> -->
+      </div>
+      <div id="hs-2">
+          <div class="sign-up">
+            <form action="sign-up.php" method="post" id="signup-form">
+              <input type="hidden" name="check_submit" value="1" />
+              
+              <h2>Sign up and start learning for free today!</h2> </br>
+              <input type="text" name="name" id="name" pattern="^[a-zA-Z0-9]+([_-]?[a-zA-Z0-9])*$" required placeholder="Display Name"/> </br> </br>
+              <input type="email" name="email" id="email" required placeholder="Email"/> </br> </br>
+              <input type="submit" value="SIGN UP NOW »"> </br>
+              <p>You will use your Display Name to log in.</p>
+            </form>
+          </div>
+      </div>
     </div>
+
+    <div class="container"></div>
 
     <script src="index.js"></script>
   </body>
