@@ -41,6 +41,24 @@ body {
   padding: 2em;
 }
 
+.s1 {
+  display: flex;
+  width: 100%;
+}
+
+.s1 div {
+  height: 100%;
+}
+
+.s1-left,
+.s1-right {
+  flex: 1;
+}
+
+.s1-middle {
+  flex: 2;
+}
+
 #hero-section {
   padding: 2em;
 }
@@ -80,6 +98,7 @@ body {
 }
 
 .sign-up input[type="text"],
+.sign-up input[type="password"],
 .sign-up input[type="email"] {
   outline: none;
   border: none;
@@ -96,7 +115,7 @@ body {
   color: #484848;
 }
 
-.sign-up input[type="submit"] {
+.sign-up button[type="submit"] {
   cursor: pointer;
   border: none;
   outline: none;
@@ -106,6 +125,27 @@ body {
   font-size: 1.125rem;
   width: 100%;
   height: 3em;
+  transition: background-color 0.2s;
+}
+
+.sign-up button[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+.sign-up button:disabled {
+  cursor: not-allowed;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: darkgray;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  width: 100%;
+  height: 3em;
+}
+
+.sign-up button:disabled:hover {
+  background-color: gray;
 }
 
 .sign-up p {
