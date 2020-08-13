@@ -48,7 +48,7 @@
       </div>
       <div id="hs-2">
           <div class="sign-up">
-            <form name="signup-form">
+            <form id="signup-form" name="signup-form">
               <h2>Sign up and start learning for free today!</h2> </br>
               <input type="text" name="name" id="name" pattern="^[a-zA-Z0-9]+([_-]?[a-zA-Z0-9])*$" required placeholder="Display Name"/> </br> </br>
               <input type="email" name="email" id="email" required placeholder="Email"/> </br> </br>
@@ -86,7 +86,7 @@
             function successFunc(response) {
               console.log("Success!", response);
               modal.style.display = "block";
-              document.getElementById("request-form").reset();
+              document.getElementById("signup-form").reset();
             }
 
             const scriptURL =
