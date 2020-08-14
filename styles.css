@@ -162,8 +162,8 @@ body {
 }
 
 .html-1 {
-  background-size: 100%;
-  background-image: url("https://picresize.com/images/rsz_2rsz_pexels-photo-270366.jpg");
+  background-size: 110%;
+  background-image: url("https://i.ibb.co/G9fNpdD/rsz-1rsz-pexels-photo-270366-1.jpg");
 }
 
 .html-2 {
@@ -172,8 +172,33 @@ body {
 }
 
 .html-3 {
-  background-size: 60%;
+  background-size: 65%;
   background-image: url("https://i.imgur.com/Tp4gkqZ.png");
+}
+
+.html-4 {
+  background-size: 75%;
+  background-image: url("https://i.imgur.com/ZCthHA4.png");
+}
+
+.css-1 {
+  background-size: 110%;
+  background-image: url("https://i.ibb.co/Ky6yF91/rsz-tools-for-structuring-optimizing-your-css-code.jpg");
+}
+
+.css-2 {
+  background-size: 110%;
+  background-image: url("https://i.ibb.co/GHKvDkc/Computer-screen-with-css-code.jpg");
+}
+
+.css-3 {
+  background-size: 200%;
+  background-image: url("https://www.publicdomainpictures.net/pictures/250000/nahled/colorful-abstract-background-1521256921CuF.jpg");
+}
+
+.css-4 {
+  background-size: 100%;
+  background-image: url("https://i.ibb.co/vwVJ1KW/rsz-maxresdefault.jpg");
 }
 
 #hero-section {
